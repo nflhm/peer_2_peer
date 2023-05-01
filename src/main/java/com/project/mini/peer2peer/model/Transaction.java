@@ -17,7 +17,7 @@ public class Transaction {
     @Column(name = "product_id")
     private int productId;
     @Column(name = "user_id_borrower")
-    private int borrowerid;
+    private int borrowerId;
     @Column(name = "amount")
     private Double amount;
     @Column(name = "tran_date")
@@ -32,10 +32,10 @@ public class Transaction {
     public Transaction() {
     }
 
-    public Transaction(int tranId, int productId, int borrowerid, Double amount, LocalDate tranDate, LocalDate dueDate, Boolean paymentStatus, Boolean deleteStatus) {
+    public Transaction(int tranId, int productId, int borrowerId, Double amount, LocalDate tranDate, LocalDate dueDate, Boolean paymentStatus, Boolean deleteStatus) {
         this.tranId = tranId;
         this.productId = productId;
-        this.borrowerid = borrowerid;
+        this.borrowerId = borrowerId;
         this.amount = amount;
         this.tranDate = tranDate;
         this.dueDate = dueDate;
@@ -46,7 +46,7 @@ public class Transaction {
     public Transaction(TransactionRequest request) {
         this.tranId = request.getTranId();
         this.productId = request.getProductId();
-        this.borrowerid = request.getBorrowerid();
+        this.borrowerId = request.getBorrowerId();
         this.amount = request.getAmount();
         this.tranDate = request.getTranDate();
         this.dueDate = request.getDueDate();
@@ -70,12 +70,12 @@ public class Transaction {
         this.productId = productId;
     }
 
-    public int getBorrowerid() {
-        return borrowerid;
+    public int getBorrowerId() {
+        return borrowerId;
     }
 
-    public void setBorrowerid(int borrowerid) {
-        this.borrowerid = borrowerid;
+    public void setBorrowerId(int borrowerId) {
+        this.borrowerId = borrowerId;
     }
 
     public Double getAmount() {

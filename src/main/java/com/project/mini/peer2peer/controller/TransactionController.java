@@ -31,10 +31,10 @@ public class TransactionController {
     }
     @GetMapping("/{tran_id}")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<MessageResponse<Transaction>> selectUniqueTransaction(@PathVariable("tran_id") int id) {
+    public ResponseEntity<MessageResponse<Transaction>> selectUniqueTransaction(@PathVariable("tran_id") int tranId) {
         Map<String, Object> res = new HashMap<>();
         res.put("message", "success find transaction data");
-        res.put("data", transactionService.findTheTransaction(id));
+        res.put("data", transactionService.findTheTransaction(tranId));
         return new ResponseEntity(res, HttpStatus.OK);
     }
     @PostMapping("/add")

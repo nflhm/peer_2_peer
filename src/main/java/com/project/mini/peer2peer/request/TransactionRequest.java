@@ -1,13 +1,11 @@
 package com.project.mini.peer2peer.request;
 
-import jakarta.persistence.Column;
-
 import java.time.LocalDate;
 
 public class TransactionRequest {
     private int tranId;
     private int productId;
-    private int borrowerid;
+    private int borrowerId;
     private Double amount;
     private LocalDate tranDate;
     private LocalDate dueDate;
@@ -30,12 +28,12 @@ public class TransactionRequest {
         this.productId = productId;
     }
 
-    public int getBorrowerid() {
-        return borrowerid;
+    public int getBorrowerId() {
+        return borrowerId;
     }
 
-    public void setBorrowerid(int borrowerid) {
-        this.borrowerid = borrowerid;
+    public void setBorrowerId(int borrowerId) {
+        this.borrowerId = borrowerId;
     }
 
     public Double getAmount() {
