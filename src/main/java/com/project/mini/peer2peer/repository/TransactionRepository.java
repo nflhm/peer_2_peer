@@ -11,7 +11,4 @@ public interface TransactionRepository extends JpaRepository<Transaction, Intege
     Transaction findTransactionByTranId(Integer integer);
     List<Transaction> findAllByOrderByBorrowerId();
     List<Transaction> findAllByOrderByProductId();
-//    @Modifying(clearAutomatically = true)
-//    @Query("update Transaction t set t.deleteStatus=1 where t.tranId=:tranId")
-//    void deleteByTranId(Integer tranId);
 }

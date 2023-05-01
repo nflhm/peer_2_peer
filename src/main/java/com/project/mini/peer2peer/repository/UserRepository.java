@@ -10,7 +10,4 @@ import java.util.List;
 public interface UserRepository extends JpaRepository<User, Integer> {
     User findUserByUserId(Integer integer);
     List<User> findAllByOrderByUserId();
-//    @Modifying(clearAutomatically = true)
-//    @Query("update User p set p.deleteStatus=1 where p.userId=:userId")
-//    void deleteByUserId(Integer userId);
 }

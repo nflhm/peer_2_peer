@@ -1,58 +1,18 @@
-package com.project.mini.peer2peer.model;
+package com.project.mini.peer2peer.request;
 
-import com.project.mini.peer2peer.request.TransactionRequest;
 import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "transaction")
-public class Transaction {
-    @Id
-    @Column(name = "tran_id")
+public class TransactionRequest {
     private int tranId;
-    @Column(name = "product_id")
     private int productId;
-    @Column(name = "user_id_borrower")
     private int borrowerid;
-    @Column(name = "amount")
     private Double amount;
-    @Column(name = "tran_date")
     private LocalDate tranDate;
-    @Column(name = "due_date")
     private LocalDate dueDate;
-    @Column(name = "payment_status")
     private Boolean paymentStatus;
-    @Column(name = "delete_status")
     private Boolean deleteStatus;
-
-    public Transaction() {
-    }
-
-    public Transaction(int tranId, int productId, int borrowerid, Double amount, LocalDate tranDate, LocalDate dueDate, Boolean paymentStatus, Boolean deleteStatus) {
-        this.tranId = tranId;
-        this.productId = productId;
-        this.borrowerid = borrowerid;
-        this.amount = amount;
-        this.tranDate = tranDate;
-        this.dueDate = dueDate;
-        this.paymentStatus = paymentStatus;
-        this.deleteStatus = deleteStatus;
-    }
-
-    public Transaction(TransactionRequest request) {
-        this.tranId = request.getTranId();
-        this.productId = request.getProductId();
-        this.borrowerid = request.getBorrowerid();
-        this.amount = request.getAmount();
-        this.tranDate = request.getTranDate();
-        this.dueDate = request.getDueDate();
-        this.paymentStatus = request.getPaymentStatus();
-        this.deleteStatus = request.getDeleteStatus();
-    }
 
     public int getTranId() {
         return tranId;

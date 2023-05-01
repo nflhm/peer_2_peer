@@ -10,7 +10,4 @@ import java.util.List;
 public interface ProductRepository extends JpaRepository<Product, Integer> {
     Product findProductByProductId(Integer integer);
     List<Product> findAllByOrderByLenderId();
-//    @Modifying(clearAutomatically = true)
-//    @Query("update Product p set p.deleteStatus=1 where p.productId=:productId")
-//    void deleteByProductId(Integer productId);
 }
