@@ -46,11 +46,14 @@ public class TransactionController {
         res.put("message", "success add transaction data");
         return new ResponseEntity(res, HttpStatus.OK);
     }
-    @PutMapping("/update/{id}")
+//    @PutMapping("/update/{id}")
+    @PutMapping("/update")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<MessageResponse<Transaction>> updateTransaction (
-            @RequestBody Transaction transaction, @PathVariable("tran_id") Integer tranId) {
-        transaction.setTranId(tranId);
+            @RequestBody Transaction transaction
+//            , @PathVariable("tran_id") Integer tranId
+    ) {
+//        transaction.setTranId(tranId);
         transactionService.update(transaction);
         Map<String, Object> res = new HashMap<>();
         res.put("message", "success update transaction data");

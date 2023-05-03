@@ -285,3 +285,32 @@ Identify and stop the process that's listening on port 8888 or configure this ap
 2023-05-01T22:09:31.320+07:00  INFO 3976 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-05-01T22:09:31.321+07:00  INFO 3976 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-05-01T22:09:31.322+07:00  INFO 3976 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-01T22:18:50.767+07:00  WARN 3976 --- [http-nio-8888-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
+2023-05-01T22:19:07.614+07:00  WARN 3976 --- [http-nio-8888-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'tran_id' for method parameter type Integer is not present]
+2023-05-01T22:20:27.882+07:00  INFO 3976 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-01T22:20:27.884+07:00  INFO 3976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-01T22:20:27.892+07:00  INFO 3976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-01T22:20:31.782+07:00  INFO 12800 --- [main] c.p.mini.peer2peer.Peer2peerApplication  : Starting Peer2peerApplication using Java 17.0.5 with PID 12800 (C:\Users\u073459\Desktop\Training\Spring Boot Training\Mini Project\peer_2_peer\target\classes started by U073459 in C:\Users\u073459\Desktop\Training\Spring Boot Training\Mini Project\peer_2_peer)
+2023-05-01T22:20:31.789+07:00  INFO 12800 --- [main] c.p.mini.peer2peer.Peer2peerApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-05-01T22:20:32.454+07:00  INFO 12800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-01T22:20:32.550+07:00  INFO 12800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
+2023-05-01T22:20:33.283+07:00  INFO 12800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2023-05-01T22:20:33.292+07:00  INFO 12800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-01T22:20:33.293+07:00  INFO 12800 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-01T22:20:33.415+07:00  INFO 12800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-01T22:20:33.415+07:00  INFO 12800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1575 ms
+2023-05-01T22:20:33.617+07:00  INFO 12800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-01T22:20:33.814+07:00  INFO 12800 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65bb6275
+2023-05-01T22:20:33.816+07:00  INFO 12800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-01T22:20:33.861+07:00  INFO 12800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-01T22:20:33.904+07:00  INFO 12800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-01T22:20:34.303+07:00  WARN 12800 --- [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-05-01T22:20:34.309+07:00  INFO 12800 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-01T22:20:35.031+07:00  INFO 12800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-01T22:20:35.040+07:00  INFO 12800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-01T22:20:35.497+07:00  WARN 12800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-01T22:20:35.965+07:00  INFO 12800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2023-05-01T22:20:35.976+07:00  INFO 12800 --- [main] c.p.mini.peer2peer.Peer2peerApplication  : Started Peer2peerApplication in 4.702 seconds (process running for 5.19)
+2023-05-01T22:20:48.335+07:00  INFO 12800 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-01T22:20:48.336+07:00  INFO 12800 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-01T22:20:48.337+07:00  INFO 12800 --- [http-nio-8888-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
