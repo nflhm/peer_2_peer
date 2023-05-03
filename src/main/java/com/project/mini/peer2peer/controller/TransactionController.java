@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -46,14 +45,11 @@ public class TransactionController {
         res.put("message", "success add transaction data");
         return new ResponseEntity(res, HttpStatus.OK);
     }
-//    @PutMapping("/update/{id}")
     @PutMapping("/update")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<MessageResponse<Transaction>> updateTransaction (
             @RequestBody Transaction transaction
-//            , @PathVariable("tran_id") Integer tranId
     ) {
-//        transaction.setTranId(tranId);
         transactionService.update(transaction);
         Map<String, Object> res = new HashMap<>();
         res.put("message", "success update transaction data");

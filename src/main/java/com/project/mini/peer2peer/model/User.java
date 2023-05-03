@@ -1,5 +1,6 @@
 package com.project.mini.peer2peer.model;
 
+import com.project.mini.peer2peer.request.UserRequest;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -23,6 +24,15 @@ public class User {
     private Boolean deleteStatus;
 
     public User() {
+    }
+
+    public User(UserRequest request) {
+        this.userId = request.getUserId();
+        this.name = request.getName();
+        this.email = request.getEmail();
+        this.password = request.getPassword();
+        this.balance = request.getBalance();
+        this.deleteStatus = request.getDeleteStatus();
     }
 
     public User(int userId, String name, String email, String password, Double balance, Boolean deleteStatus) {

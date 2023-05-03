@@ -1,5 +1,6 @@
 package com.project.mini.peer2peer.model;
 
+import com.project.mini.peer2peer.request.ProductRequest;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -16,18 +17,26 @@ public class Product {
     @Column(name = "interest")
     private Float interest;
     @Column(name = "due_time")
-    private int due_time;
+    private int dueTime;
     @Column(name = "delete_status")
     private Boolean deleteStatus;
 
     public Product() {
     }
 
-    public Product(int productId, int lenderId, Float interest, int due_time, Boolean deleteStatus) {
+    public Product(ProductRequest request) {
+        this.productId = request.getProductId();
+        this.lenderId = request.getLenderId();
+        this.interest = request.getInterest();
+        this.dueTime = request.getDueTime();
+        this.deleteStatus = request.getDeleteStatus();
+    }
+
+    public Product(int productId, int lenderId, Float interest, int dueTime, Boolean deleteStatus) {
         this.productId = productId;
         this.lenderId = lenderId;
         this.interest = interest;
-        this.due_time = due_time;
+        this.dueTime = dueTime;
         this.deleteStatus = deleteStatus;
     }
 
@@ -55,12 +64,12 @@ public class Product {
         this.interest = interest;
     }
 
-    public int getDue_time() {
-        return due_time;
+    public int getDueTime() {
+        return dueTime;
     }
 
-    public void setDue_time(int due_time) {
-        this.due_time = due_time;
+    public void setDueTime(int dueTime) {
+        this.dueTime = dueTime;
     }
 
     public Boolean getDeleteStatus() {
