@@ -1,0 +1,27 @@
+2023-05-06T18:37:49.608+07:00  INFO 19164 --- [main] c.p.m.p.Peer2peerUserApplication         : Starting Peer2peerUserApplication using Java 17.0.5 with PID 19164 (C:\Users\u073459\Desktop\peer2peer-user\target\classes started by U073459 in C:\Users\u073459\Desktop\peer2peer-user)
+2023-05-06T18:37:49.612+07:00  INFO 19164 --- [main] c.p.m.p.Peer2peerUserApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-05-06T18:37:50.525+07:00  INFO 19164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-06T18:37:50.625+07:00  INFO 19164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interfaces.
+2023-05-06T18:37:51.554+07:00  INFO 19164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2023-05-06T18:37:51.571+07:00  INFO 19164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-06T18:37:51.572+07:00  INFO 19164 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-06T18:37:51.724+07:00  INFO 19164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-06T18:37:51.725+07:00  INFO 19164 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2039 ms
+2023-05-06T18:37:51.923+07:00  INFO 19164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-06T18:37:52.197+07:00  INFO 19164 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@342e690b
+2023-05-06T18:37:52.200+07:00  INFO 19164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-06T18:37:52.278+07:00  INFO 19164 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-06T18:37:52.375+07:00  INFO 19164 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-06T18:37:52.901+07:00  WARN 19164 --- [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-05-06T18:37:52.907+07:00  INFO 19164 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-06T18:37:53.742+07:00  INFO 19164 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-06T18:37:53.754+07:00  INFO 19164 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-06T18:37:54.233+07:00  WARN 19164 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-06T18:37:54.657+07:00  INFO 19164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2023-05-06T18:37:54.668+07:00  INFO 19164 --- [main] c.p.m.p.Peer2peerUserApplication         : Started Peer2peerUserApplication in 5.732 seconds (process running for 6.373)
+2023-05-06T18:38:03.438+07:00  INFO 19164 --- [http-nio-8889-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-06T18:38:03.439+07:00  INFO 19164 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-06T18:38:03.441+07:00  INFO 19164 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-06T18:38:57.344+07:00  INFO 19164 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-06T18:38:57.347+07:00  INFO 19164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-06T18:38:57.358+07:00  INFO 19164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

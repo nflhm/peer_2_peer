@@ -1,0 +1,27 @@
+2023-05-06T18:30:02.822+07:00  INFO 15976 --- [main] c.p.m.p.Peer2peerProductApplication      : Starting Peer2peerProductApplication using Java 17.0.5 with PID 15976 (C:\Users\u073459\Desktop\peer2peer-product\target\classes started by U073459 in C:\Users\u073459\Desktop\peer2peer-product)
+2023-05-06T18:30:02.826+07:00  INFO 15976 --- [main] c.p.m.p.Peer2peerProductApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-05-06T18:30:03.843+07:00  INFO 15976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-06T18:30:03.970+07:00  INFO 15976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 1 JPA repository interfaces.
+2023-05-06T18:30:04.951+07:00  INFO 15976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
+2023-05-06T18:30:04.967+07:00  INFO 15976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-06T18:30:04.968+07:00  INFO 15976 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-06T18:30:05.159+07:00  INFO 15976 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-06T18:30:05.160+07:00  INFO 15976 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2239 ms
+2023-05-06T18:30:05.418+07:00  INFO 15976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-06T18:30:05.686+07:00  INFO 15976 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@456bcb74
+2023-05-06T18:30:05.688+07:00  INFO 15976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-06T18:30:05.753+07:00  INFO 15976 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-06T18:30:05.839+07:00  INFO 15976 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-05-06T18:30:06.394+07:00  WARN 15976 --- [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-05-06T18:30:06.401+07:00  INFO 15976 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-05-06T18:30:07.320+07:00  INFO 15976 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-06T18:30:07.334+07:00  INFO 15976 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-06T18:30:07.851+07:00  WARN 15976 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-06T18:30:08.409+07:00  INFO 15976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
+2023-05-06T18:30:08.421+07:00  INFO 15976 --- [main] c.p.m.p.Peer2peerProductApplication      : Started Peer2peerProductApplication in 6.413 seconds (process running for 7.317)
+2023-05-06T18:30:11.416+07:00  INFO 15976 --- [http-nio-8887-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-06T18:30:11.418+07:00  INFO 15976 --- [http-nio-8887-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-06T18:30:11.420+07:00  INFO 15976 --- [http-nio-8887-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-06T18:30:43.463+07:00  INFO 15976 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-06T18:30:43.467+07:00  INFO 15976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-06T18:30:43.483+07:00  INFO 15976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
