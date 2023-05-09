@@ -30,9 +30,13 @@ public class ProductController {
     @GetMapping("/{product_id}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<MessageResponse<Product>> selectUniqueProduct(@PathVariable("product_id") int productId) {
+        System.out.println("Request productId: "+productId);
         Map<String, Object> res = new HashMap<>();
+        Product aa = productService.findTheProduct(productId);
+//        System.out.println("data: " + aa.getProductId() + aa.getAmount() + " "+ aa.getInterest() + " "+aa.getDeleteStatus());
         res.put("message", "success find product data");
         res.put("data", productService.findTheProduct(productId));
+        System.out.println(new ResponseEntity(res, HttpStatus.OK));
         return new ResponseEntity(res, HttpStatus.OK);
     }
     @PostMapping("/add")

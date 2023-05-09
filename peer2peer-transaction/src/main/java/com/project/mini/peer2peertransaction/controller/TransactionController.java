@@ -55,4 +55,14 @@ public class TransactionController {
         res.put("message", "success update transaction data");
         return new ResponseEntity(res, HttpStatus.OK);
     }
+    @PostMapping("/payloan")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<MessageResponse<Transaction>> payLoan (
+            @RequestParam("tran_id") int transId,
+            @RequestParam("user_id_borrower") int borrowerId) {
+        transactionService.payLoanWithInterest(borrowerId, transId);
+        Map<String, Object> res = new HashMap<>();
+        res.put("message", "success update transaction data");
+        return new ResponseEntity(res, HttpStatus.OK);
+    }
 }

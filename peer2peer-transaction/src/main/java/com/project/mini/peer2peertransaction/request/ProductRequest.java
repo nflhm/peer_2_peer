@@ -1,6 +1,9 @@
-package com.project.mini.peer2peerproduct.request;
+package com.project.mini.peer2peertransaction.request;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ProductRequest {
     private int productId;
     private int lenderId;
@@ -8,7 +11,6 @@ public class ProductRequest {
     private Float interest;
     private int dueTime;
     private Boolean deleteStatus;
-
     public int getProductId() {
         return productId;
     }

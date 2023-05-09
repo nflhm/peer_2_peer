@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
+    User findByName(String username);
     User findUserByUserId(Integer integer);
     List<User> findAllByOrderByUserId();
 }
